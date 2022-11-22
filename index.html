@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>practice 14</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<h1 class="header__title">
+					FLEXBOX
+				</h1>
+				<p class="header__text">
+					Flexbox - це цілий модуль,
+					що містить у собі набір властивостей та їх значень як для
+					батька flex-контейнера, так і для його дочірніх елементів
+					flex-елементів.
+					Основною перевагою гнучкої FLEX розмітки є можливість
+					змінювати ширину/висоту простір навколо та
+					порядок flex-елементів, для того, щоб найкращим
+					чином заповнити доступний простір flex-контейнера.
+				</p>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<div class="flexbox">
+					<h2 class="flexbox__container-title">
+						Властивості для flex-контейнера
+					</h2>
+					<div class="flexbox__display-flex display-flex">
+						<h2 class="display-flex__title">
+							display flex/inline-flex
+						</h2>
+						<p class="display-flex__text">
+							Визначає flex-контейнер,
+							блочний або рядковий залежить від переданого значення.
+							Перетворює всі свої прямі,
+							дочірні елементи у flex-елементи.
+						</p>
+						<div class="display-flex__first">
+							<h3 class="display-flex__subtitle">
+								flex - блочний flex-контейнер
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="display-flex__second">
+							<h3 class="display-flex__subtitle">
+								inline-flex - рядковий flex-контейнер
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+					</div>
+					<div class="flexbox__wrap wrap">
+						<h2 class="wrap__title">
+							Flex-wrap
+						</h2>
+						<p class="wrap__text">
+							Визначає, чи зможуть flex-елементи переміщатися
+							на наступні рядки, коли перестають поміщатися
+							всередині flex-контейнера.
+						</p>
+						<div class="wrap__first">
+							<h3 class="wrap__subtitle">
+								no-wrap - (за замовченням) flex-елементи не можуть
+								переміщатися на наступні рядки flex-контейнера.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="wrap__second">
+							<h3 class="wrap__subtitle">
+								wrap - flex-елементи зможуть переміщатися на
+								наступні рядки flex-контейнера.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="wrap__third">
+							<h3 class="wrap__subtitle">
+								wrap-reverse - flex-елементи зможуть переміщатися
+								на наступні рядки flex-контейнера, але у зворотному порядку.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+					</div>
+					<div class="flexbox__justify-content justify-content">
+						<h2 class="justify-content__title">
+							Justify-content
+						</h2>
+						<p class="justify-content__text">
+							Визначає вирівнювання вздовж основної осі
+							(напрямок залежить від значення властивості flex-direction).
+						</p>
+						<div class="justify-content__first">
+							<h3 class="justify-content__subtitle">
+								flex-start - значення за промовчанням (не потрібно вказувати). Flex-елементи притискаються до
+								початку осі.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="justify-content__second">
+							<h3 class="justify-content__subtitle">
+								flex-end - flex-елементи притискаються в кінець осі.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="justify-content__third">
+							<h3 class="justify-content__subtitle">
+								center - flex-елементи розташовуються в центрі основної осі.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="justify-content__fourth">
+							<h3 class="justify-content__subtitle">
+								space-between - flex-елементи розміщуються
+								поступово по основній осі. Перший елемент знаходиться на початку осі,
+								останній елемент знаходиться наприкінці осі.
+								Між елементами постійно однаковий простір.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="justify-content__fifth">
+							<h3 class="justify-content__subtitle">
+								space-around - flex-елементи розташовуються рівномірно
+								по основній осі. До кожного flex-елементу
+								додається простір ліворуч і праворуч.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="justify-content__sixth">
+							<h3 class="justify-content__subtitle">
+								space-evenly - flex-елементи розташовуються рівномірно по
+								основній осі з однаковим простором навколо них.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+					</div>
+					<div class="flexbox__align-items align-items">
+						<h2 class="align-items__title">
+							Align-items
+						</h2>
+						<p class="align-items__text">
+							Визначає вирівнювання вздовж поперечної осі
+							(напрямок залежить від значення властивості flex-direction).
+						</p>
+						<div class="align-items__first">
+							<h3 class="align-items__subtitle">
+								stretch - значення за замовчуванням (не потрібно вказувати). Flex-елементи розтягуються весь
+								розмір поперечної осі
+								flex-контейнера.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="align-items__second">
+							<h3 class="align-items__subtitle">
+								flex-start - flex-елементи притискаються до
+								початку поперечної осі.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="align-items__third">
+							<h3 class="align-items__subtitle">
+								flex-end - flex-елементи притискаються вкінець поперечної осі.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="align-items__fourth">
+							<h3 class="align-items__subtitle">
+								flex-center - flex-елементи розміщуються посередині поперечної осі.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+					</div>
+					<div class="flexbox__flex-direction flex-direction">
+						<h2 class="flex-direction__title">
+							Flex-direction
+						</h2>
+						<div class="flex-direction__text">
+							Встановлює основну вісь,
+							таким чином визначає напрямок flex-елементів,
+							розташованих у flex-контейнері.
+						</div>
+						<div class="flex-direction__first">
+							<h3 class="flex-direction__subtitle">
+								row - значення за промовчанням (не потрібно вказувати).
+								Основна вісь горизонтальна. Всі flex-елементи
+								розташуються ліворуч по горизонталі.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="flex-direction__second">
+							<h3 class="flex-direction__subtitle">
+								row-reverse - схоже на значення row, але міняються місцями початкова і кінцева точки і головна
+								вісь спрямована справа наліво.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="flex-direction__third">
+							<h3 class="flex-direction__subtitle">
+								column - flex-елементи відображаються у вигляді стовпчика. Стовпчик формується зверху вниз.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="flex-direction__fourth">
+							<h3 class="flex-direction__subtitle">
+								column-reverse - головна вісь розташовується вертикально, але змінюється положення початкової і
+								кінцевої точок і вісь спрямована знизу вгору.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+					</div>
+					<div class="flexbox__gap gap">
+						<h2 class="gap__title">
+							Gap
+						</h2>
+						<p class="gap__text">
+							Проміжок між flex-елементами.
+							Не залежить від flex-direction.
+						</p>
+						<div class="gap__first">
+							<h3 class="gap__subtitle">
+								column-gap - проміжок між колонками.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="gap__second">
+							<h3 class="gap__subtitle">
+								row-gap - проміжок між рядками.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="gap__third">
+							<h3 class="gap__subtitle">
+								gap - загальний проміжок (між колонками та рядками)
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+					</div>
+					<h2 class="flexbox__elements-title">
+						Властивості для дочірніх flex-елементів
+					</h2>
+					<div class="flexbox__align-self align-self">
+						<h2 class="align-self__title">
+							Align-self
+						</h2>
+						<p class="align-self__text">
+							Перевизначає для конкретного flex-елемента
+							вирівнювання вздовж поперечної осі
+							(напрямок залежить від значення якості flex-direction).
+						</p>
+						<div class="align-self__first">
+							<h3 class="align-self__subtitle">
+								flex-start - flex-елементи притискаються до початку поперечної осі.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="align-self__second">
+							<h3 class="align-self__subtitle">
+								flex-end - flex-елементи притискаються вкінець поперечної осі.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="align-self__third">
+							<h3 class="align-self__subtitle">
+								center - flex-елементи розміщуються посередині поперечної осі.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+					</div>
+					<div class="flexbox__flex flex">
+						<h2 class="flex__title">
+							Flex
+						</h2>
+						<p class="flex__text">
+							Дозволяє вказати параметри елемента, щоб він ефективно заповнював доступний простір. Елементи
+							можуть бути розтягнуті пропорційно з урахуванням заданого співвідношення або стиснуті, щоб цілком
+							вмістити всі елементи без переносів в один рядок.
+						</p>
+						<div class="flex__first">
+							<h3 class="flex__subtitle">
+								flex-grow - 0 заборонено, 1 дозволено (за замовченням - 0).
+								Визначає можливість елемента збільшуватись
+								у розмірі, при необхідності заповнюючи весь
+								flex-контейнер.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="flex__second">
+							<h3 class="flex__subtitle">
+								flex-shrink - 0 заборонено, 1 дозволено (за замовченням - 1).
+								Визначає можливість елемента зменшуватись
+								у розмірі, при необхідності заповнюючи весь flex-контейєр.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+						<div class="flex__third">
+							<h3 class="flex__subtitle">
+								flex-basis - визначає базовий розмір елемента за умовчанням,
+								до розподілу простору, що залишився.
+								Значення можуть бути у відсотках пікселях тощо.
+								auto - розмір по контенту.
+							</h3>
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+					</div>
+					<div class="flexbox__order order">
+						<h2 class="order__title">
+							Order
+						</h2>
+						<p class="order__text">
+							Керує порядком,
+							в якому розташовуються flex-елементи
+							всередині flex-контейнера.
+						</p>
+						<div class="order__wrapper">
+							<div class="flexbox-items">
+								<div class="flexbox-item">1</div>
+								<div class="flexbox-item">2</div>
+								<div class="flexbox-item">3</div>
+								<div class="flexbox-item">4</div>
+							</div>
+						</div>
+					</div>
+					<div class="flexbox__example example">
+						<h2 class="example__title">
+							Приклад з картками
+						</h2>
+						<div class="example__wrapper cards">
+							<div class="cards__item">
+								<div class="cards__content">
+									<div class="cards__image">
+										<img src="img/under_armour_project_rock_terry_shorts.jpg"
+											alt="Чоловічі шорти Under Armour">
+									</div>
+									<p class="cards__text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vitae inventore
+										voluptatum
+										vero. Accusamus cumque provident sequi veritatis hic repudiandae corporis mollitia
+										laboriosam
+										repellendus beatae illo eos nisi, dolores rem.
+									</p>
+									<a class="cards__button" href="">Купити</a>
+								</div>
+							</div>
+							<div class="cards__item">
+								<div class="cards__content">
+									<div class="cards__image">
+										<img src="img/under_armour_project_rock_terry_shorts.jpg"
+											alt="Чоловічі шорти Under Armour">
+									</div>
+									<p class="cards__text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum unde odio sit velit ad
+										magnam molestiae, facere a praesentium fuga.
+									</p>
+									<a class="cards__button" href="">Купити</a>
+								</div>
+							</div>
+							<div class="cards__item">
+								<div class="cards__content">
+									<div class="cards__image">
+										<img src="img/under_armour_project_rock_terry_shorts.jpg"
+											alt="Чоловічі шорти Under Armour">
+									</div>
+									<p class="cards__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, voluptatem?
+									</p>
+									<a class="cards__button" href="">Купити</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<h2 class="footer__title">Домашня робота №14</h2>
+		</footer>
+	</div>
+
+
+</body>
+
+</html>
